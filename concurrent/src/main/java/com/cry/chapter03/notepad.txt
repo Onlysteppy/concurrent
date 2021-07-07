@@ -1,0 +1,10 @@
+使当前线程进入阻塞状态的方法：
+wait
+sleep
+join
+interruptibleChannel的io操作
+Selector的wakeup方法。
+1、interrupt 给当前线程打了一个interrupt flag 标志
+2、isInterrupted 判断当前是否有interrupt flag标志，不会清除标志。
+3、interrupted  判断当前是否有interrupt flag标志，会清除当前标志。 静态的。
+4、InterruptedException异常被捕捉到，会清除interrupt flag标志。
